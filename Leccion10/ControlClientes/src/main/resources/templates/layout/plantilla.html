@@ -1,0 +1,23 @@
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+    <body>
+        <header th:fragment="header">
+            <h1 th:text="#{plantilla.titulo}"></h1>
+        </header>
+        
+        <footer th:fragment="footer">
+            <div >
+                    <br/>
+                    <a th:href="@{/(lang=es)}">ES</a> |
+                    <a th:href="@{/(lang=en)}">EN</a> |
+                    <span> [[#{plantilla.pie-pagina}]] <a href="http://www.globalmentoring.com.ax" target="_blank"</span> 
+                    <form method="POST" th:action="@{/logout}">
+                        <button type="submit">Logout</button>
+                    </form>
+            </div>
+            
+        </footer>
+    </body>
+</html>
