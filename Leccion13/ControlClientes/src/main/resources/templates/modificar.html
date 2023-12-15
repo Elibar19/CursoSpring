@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+    <head th:replace="layout/plantilla :: head">
+        <title>Datos de la Persona</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header th:replace="layout/plantilla :: header"></header>
+        <section th:replace="layout/editarCliente :: editarCliente"></section>
+        <footer th:replace="layout/plantilla :: footer"></footer>
+    </body>
+</html>
+
+
+
+
+
+
+
+<!--<h1>[[#{formulario.datos-persona}]]</h1>
+        <a th:href="@{/}">Regresar</a>
+        <br>
+        <form th:action="@{/guardar}" method="post" th:object="${persona}">
+            <input type="hidden" name="id" th:field="*{idPersona}">
+            <label for="nombre">[[#{persona.nombre}]]:</label>
+            <input type="text" name="nombre" th:field="*{nombre}">
+            <span th:if="${#fields.hasErrors('nombre')}" th:errors="*{nombre}">Error Nombre</span>
+            <br>
+            <label for="apellido">[[#{persona.apellido}]]:</label>
+            <input type="text" name="apellido" th:field="*{apellido}">
+            <span th:if="${#fields.hasErrors('apellido')}" th:errors="*{apellido}">Error Apellido</span>
+            <br>
+            <label for="email">[[#{persona.email}]]:</label>
+            <input type="text" name="email" th:field="*{email}">
+            <span th:if="${#fields.hasErrors('email')}" th:errors="*{email}">Error Mail</span>
+            <br>
+            <label for="telefono">[[#{persona.telefono}]]:</label>
+            <input type="number" name="telefono" th:field="*{telefono}">
+            <span th:if="${#fields.hasErrors('telefono')}" th:errors="*{telefono}">Error Telefono</span>
+
+            <br>
+            <input type="submit" name="guardar" th:value="#{accion.guardar}"/>
+        </form>-->
